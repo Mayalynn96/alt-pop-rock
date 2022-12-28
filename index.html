@@ -5,9 +5,39 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/style.css">
-    <title>Document</title>
+    <title>Alt Pop Rock</title>
 </head>
 <body>
+    <header>
+        <h1>Welcome to Alt Pop Rock!</h1>
+        <h3>A quiz about Alternative, Pop and Rock Music!</h3>
+        <p id="scoreBoard">Score Board</p>
+    </header>
+    <main>
+        <p id="score">Score: 120</p>
+        <section id="game">
+            <h3 id="question">1. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate at dolor adipisci officia veniam quisquam enim assumenda aliquid corporis ipsam, neque minima numquam illum, ab saepe eum provident ut nulla?</h3>
+            <div id="options">
+                <button class="answers" value="btn1" onclick="btnPress(this.value, 0)">answer 1</button>
+                <button class="answers" value="btn2" onclick="btnPress(this.value, 1)">answer 2</button>
+                <button class="answers" value="btn3" onclick="btnPress(this.value, 2)">answer 3</button>
+                <button class="answers" value="btn4" onclick="btnPress(this.value, 3)">answer 4</button>
+            </div>
+            <p id="result">Correct!</p>
+        </section>
+        <section id="nameInputSection">
+            <h2 id="endMessage">That was all for now!</h2>
+            <p>Your score is:</p>
+            <p id="endScore"></p>
+            <form>
+                <input type="text" id="uName" name="uName" placeholder="Your name"><br>
+                <input type="submit" id="submit" value="submit">
+            </form>
+        </section>
+    </main>
+    <footer>
+        <h3>&copy;2022 Maya Lynn Cohen</h3>
+    </footer>
     <script src="assets/script.js"></script>
 </body>
 </html>

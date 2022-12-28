@@ -2,4 +2,124 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+body {
+    background-image: url(./images/BackgroundImage.png);
+    background-repeat: none;
+    background-size: cover;
+}
+
+header {
+    height: 15vh;
+    text-align: center;
+    position: relative;
+    padding: 1%;
+    background-color: rgb(124, 83, 111);
+    opacity: 50%;
+    border-bottom: 5px solid rgb(216, 162, 199);
+    color: #ecd4cb;
+}
+
+header h1 {
+    margin-bottom: 2vh;
+}
+
+#scoreBoard {
+    position: absolute;
+    top: 5px;
+}
+
+main {
+    height: 75vh;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    opacity: 50%;
+}
+
+#score {
+    position: relative;
+    left: 50%;
+    top: 5%;
+    font-size: 20px;
+    width: 10%;
+    font-weight: bold;
+}
+
+#nameInputSection {
+    display: flex;
+    width: 30vw;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    align-self: center;
+}
+
+#nameInputSection h2 {
+    margin-bottom: 5%;
+}
+
+#endScore {
+    font-size: 30px;
+    font-weight: bold;
+    margin: 1%;
+}
+
+form input{
+    margin: 5px;
+}
+
+#uName {
+    font-size: 25px;
+    padding: 1%;
+}
+
+#submit {
+    padding: 1%;
+    font-size: 20px;
+}
+
+#game {
+    padding-top: 10vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 60vw;
+    text-align: left;
+    align-content: flex-start;
+    align-self: flex-start;
+}
+
+#game h3 {
+    width: 100%;
+    margin-bottom: 20px;
+
+}
+
+#options {
+    width: 50%;
+}
+
+.answers {
+    width: 80%;
+    font-size: 24px;
+    padding: 2%;
+    margin: 2%;
+}
+
+#result {
+    width: 50%;
+    color: rgb(80, 80, 80);
+    border-left: 1px solid grey;
+    padding-left: 5%;
+    font-size: 25px;
+    font-style: italic;
+}
+
+footer {
+    height: 10vh;
+    text-align: center;
+    opacity: 50%;
 }
