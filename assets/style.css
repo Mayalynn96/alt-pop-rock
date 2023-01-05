@@ -16,6 +16,7 @@ body {
 /* Header styling */
 header {
     height: 15vh;
+    min-height: 150px;
     text-align: center;
     position: relative;
     padding: 1%;
@@ -29,7 +30,7 @@ header h1 {
     margin-bottom: 2vh;
 }
 
-#scoreBoard {
+#scoreBoardBtn {
     position: absolute;
     top: 5px;
 }
@@ -62,7 +63,7 @@ main {
 }
 
 /* Score counter */
-#score {
+#scoreCount {
     position: absolute;
     padding-top: 2%;
     font-size: 20px;
@@ -112,7 +113,7 @@ main {
 }
 
 /* End game screen styling */
-#nameInputSection {
+#endGame {
     display: flex;
     width: 30vw;
     text-align: center;
@@ -121,7 +122,7 @@ main {
     align-self: center;
 }
 
-#nameInputSection h2 {
+#endGame h2 {
     margin-bottom: 5%;
 }
 
@@ -144,6 +145,10 @@ form input{
 #submit {
     padding: 1%;
     font-size: 20px;
+}
+
+#scoreBoard {
+    margin-top: 20px;
 }
 
 /* Footer styling */

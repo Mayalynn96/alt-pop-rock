@@ -13,17 +13,17 @@
         <h1>Welcome to Alt Pop Rock!</h1>
         <h3>A quiz about Alternative, Pop and Rock Music!</h3>
         <!-- Brings user to score board screen -->
-        <p id="scoreBoard">Score Board</p>
+        <p id="scoreBoardBtn">Score Board</p>
     </header>
     <!-- Main part where the different section are the different game screens -->
     <main>
         <!-- Score countdown -->
-        <p id="score"></p>
+        <p id="scoreCount"></p>
         <!-- Start screen section -->
         <section id="start">
             <h2>Ready? Press start to play!</h2>
             <!-- start button -->
-            <button id="startBtn" onclick="startGame()">Start</button>
+            <button id="startBtn">Start</button>
         </section>
         <!-- Main game section -->
         <section id="game">
@@ -31,25 +31,29 @@
             <h3 id="question"></h3>
             <!-- All the answer options are added to the buttons accordingly -->
             <div id="options">
-                <button class="answers" value="btn1" onclick="btnPress(this.value, 0)"></button>
-                <button class="answers" value="btn2" onclick="btnPress(this.value, 1)"></button>
-                <button class="answers" value="btn3" onclick="btnPress(this.value, 2)"></button>
-                <button class="answers" value="btn4" onclick="btnPress(this.value, 3)"></button>
+                <button class="answers" value="btn1"></button>
+                <button class="answers" value="btn2" ></button>
+                <button class="answers" value="btn3" ></button>
+                <button class="answers" value="btn4" ></button>
             </div>
             <!-- Shows the user weather their answer is correct or wrong -->
             <p id="result"></p>
         </section>
         <!-- End game screen section where the player gets to see their score and enter their name for the score board -->
-        <section id="nameInputSection">
+        <section id="endGame">
             <h2 id="endMessage">That was all for now!</h2>
             <p>Your score is:</p>
             <!-- The time left on the score timer becomes the end score -->
             <p id="endScore"></p>
             <form>
                 <!-- Name input form -->
-                <input type="text" id="uName" name="uName" placeholder="Your name"><br>
+                <input type="text" id="uName" name="uName" placeholder="Your name" required><br>
                 <input type="button" id="submit" value="submit">
             </form>
+        </section>
+        <section id="scoreBoard">
+            <h2>Score Board</h2>
+            <ul id="scoresList"></ul>
         </section>
     </main>
     <!-- footer section -->
