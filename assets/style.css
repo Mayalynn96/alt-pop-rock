@@ -16,7 +16,7 @@ body {
 /* Header styling */
 header {
     height: 15vh;
-    min-height: 150px;
+    min-height: 120px;
     text-align: center;
     position: relative;
     padding: 1%;
@@ -76,7 +76,7 @@ main {
 #game {
     position: absolute;
     padding-top: 5%;
-    display: flex;
+    display: none;
     flex-direction: row;
     flex-wrap: wrap;
     width: 60vw;
@@ -114,7 +114,7 @@ main {
 
 /* End game screen styling */
 #endGame {
-    display: flex;
+    display: none;
     width: 30vw;
     text-align: center;
     flex-direction: column;
@@ -147,9 +147,52 @@ form input{
     font-size: 20px;
 }
 
+/* Score Board Section */
 #scoreBoard {
-    margin-top: 20px;
+    display: none;
+    flex-direction: column;
+    border: solid 3px rgb(124, 83, 111);
+    height: auto;
+    margin-bottom: auto;
+    margin-top: 80px;
 }
+
+#scoreBoard h2 {
+    text-align: center;
+    width: 300px;
+    padding: 5px;
+    background-color: rgb(214, 184, 205);
+    border-bottom: solid 3px rgb(124, 83, 111);
+}
+
+#scoresList {
+    list-style-type: none;
+    text-align: center;
+    width: 300px;
+}
+
+#scoresList li {
+    padding: 5px;
+    border-bottom: solid 1px rgb(214, 184, 205);
+}
+
+/* Replay and Score reset buttons */
+#reBtns {
+    width: 300px;
+    text-align: center;
+    height: 80px;
+    position: absolute;
+    display: none;
+    justify-content: space-between;
+}
+
+#replayBtn, #resetBtn {
+    height: 50px;
+    font-size: 20px;
+    margin-top: 10px;
+    padding: 10px;
+}
+
 
 /* Footer styling */
 footer {
