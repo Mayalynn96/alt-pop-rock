@@ -176,6 +176,21 @@ function endGame() {
     }
 }
 
+// End game section elements
+var submitBtn = document.getElementById("submit");
+var userNameInput = document.getElementById("uName");
+
+//user is brought to score board when name is entered
+submitBtn.addEventListener("click", function(event) {
+    if(userNameInput.value === "") {
+        return;
+    } else {
+        event.preventDefault();
+        saveNewScore();
+        goToScores();
+    }
+});
+
 // score tracking elements
 var allScoresString = localStorage.getItem("allScores");
 // turns scores back into object array
@@ -224,28 +239,17 @@ scoreBoardBtn.addEventListener("click", function() {
     goToScores();
 })
 
-// End game section elements
-var submitBtn = document.getElementById("submit");
-var userNameInput = document.getElementById("uName");
-
-//user is brought to score board when name is entered
-submitBtn.addEventListener("click", function(event) {
-    event.preventDefault();
-    saveNewScore();
-    goToScores();
-  });
-
 // reset and replay buttons elements
 var replayBtn = document.getElementById("replayBtn");
 var resetBtn = document.getElementById("resetBtn");
 
 // Reloads the page if they want to play again
 replayBtn.addEventListener("click", function() {
-    location. reload();
+    location.reload();
 })
 
 // deletes all scores from local storage and hides the score list
 resetBtn.addEventListener("click", function() {
-    localStorage. clear();
+    localStorage.clear();
     listEl.style.display = "none";
 })
